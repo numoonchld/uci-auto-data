@@ -11,6 +11,9 @@ from sklearn.model_selection import train_test_split
 data_path = 'csv/00-cleaned-up-data.csv'
 df = pd.read_csv(data_path)
 
+### MAKE IT ML-ALGORITHM FRIENDLY: -----------------------
+df = pd.get_dummies(df)                                    
+
 ### ASSIGN PREDICTOR/TARGET: -------------------
 y = df['price']
 x = df.loc[:, df.columns != 'price']
