@@ -72,4 +72,4 @@ print(df.describe(include="all"))
 
 ### EXPORT CSV: -----------------------------------------
 
-df.to_csv('00-cleaned-up-data.csv', index=False)
+df.to_csv('csv/00-cleaned-up-data.csv', index=False)
