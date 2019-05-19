@@ -2,15 +2,7 @@
 # import ml libraries 
 import pandas as pd
 import numpy as np
-import scipy as sp
 
-import matplotlib as mlp
-import matplotlib.pyplot as plt
-
-import seaborn as sns
-
-import tensorflow as tf
-import keras as kr
 
 ### IMPORT: ------------------------------------
 data_path = 'imports-85.data'
@@ -48,10 +40,12 @@ df.columns = header
 # convert "?" to np.nan:
 df.replace('?',np.nan, inplace=True)
 df.dropna(inplace=True)  # drops entire observation with missing values
+
+# additional tools:
 # df.dropna(subset=['price'],axis = 0,inplace=True) # inplace = true drops the rows 
 # df = df.dropna(subset=['price'],axis = 0)
 
-## datatype cleanup: ---------------------------------
+## datatype cleanup: 
 
 # check datatypes of each column:
 #print(df.head(30))
@@ -75,9 +69,6 @@ df['price'] = df['price'].astype('int')
 
 # quick stats - all columns:
 print(df.describe(include="all"))
-
-# compute the mean of a column by refering:
-# print(df['length'].mean())
 
 ### EXPORT CSV: -----------------------------------------
 
