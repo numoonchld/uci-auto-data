@@ -8,7 +8,9 @@ from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-### IMPORT: ------------------------------------
+import pickle
+
+### IMPORT TRAINING DATA: ------------------------------------
 x_train = pd.read_csv('csv/02-x_train.csv')
 y_train = pd.read_csv('csv/02-y_train.csv')
 
@@ -64,8 +66,24 @@ print('Car Specs:Price Linear Regression Model: ')
 print(lm_car_specs.intercept_, lm_car_specs.coef_)
 print('---------')
 
+### SAVE MODELS TO FILE: ----------------------------------
+filename = 'models/lm_engine_size.sav'
+pickle.dump(lm_engine_size, open(filename, 'wb'))
 
-### PREDICTIONS: -------------------------------
+filename = 'models/lm_horsepower.sav'
+pickle.dump(lm_horsepower, open(filename, 'wb'))
 
+filename = 'models/lm_highway_mpg.sav'
+pickle.dump(lm_highway_mpg, open(filename, 'wb'))
 
+filename = 'models/lm_symboling.sav'
+pickle.dump(lm_symboling, open(filename, 'wb'))
 
+filename = 'models/lm_norm_loss.sav'
+pickle.dump(lm_norm_loss, open(filename, 'wb'))
+
+filename = 'models/lm_build_dim.sav'
+pickle.dump(lm_build_dim, open(filename, 'wb'))
+
+filename = 'models/lm_car_specs.sav'
+pickle.dump(lm_car_specs, open(filename, 'wb'))
