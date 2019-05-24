@@ -6,8 +6,8 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 import tensorflow as tf
+
 import keras
-from keras import layers
 
 import pickle
 
@@ -65,12 +65,15 @@ train_target = train_data.pop('price')
 test_target = test_data.pop('price')
 
 train_stats = train_data.describe().transpose()
-print(train_stats)
+# print(train_stats)
 
 ### NORMALIZE DATA: ============================================================
 
 normed_train_data = (train_data - train_stats['mean']) / train_stats['std']
 normed_test_data = (test_data - train_stats['mean']) / train_stats['std']
+
+print(normed_train_data)
+print(normed_test_data)
 
 ### KERAS MODEL: ===============================================================
 
@@ -79,10 +82,13 @@ normed_test_data = (test_data - train_stats['mean']) / train_stats['std']
 # setup model within a function 
 
 def build_model():
+
   model = keras.Sequential([
-    layers.Dense(64, activation=tf.nn.relu, input_shape=[len(train_data.keys())]),
-    layers.Dense(64, activation=tf.nn.relu),
-    layers.Dense(1)
+    keras.layers.Dense(64, input_shape=[len(train_data.keys())] ),
+    keras.layers.Activation('relu'),
+    keras.layers.Dense(64),
+    keras.layers.Activation('relu'),
+    keras.layers.Dense(1)
   ])
 
   optimizer = keras.optimizers.RMSprop(0.001)
@@ -90,6 +96,7 @@ def build_model():
   model.compile(loss='mean_squared_error',
                 optimizer=optimizer,
                 metrics=['mean_absolute_error', 'mean_squared_error'])
+
   return model
 
 model = build_model()
@@ -99,4 +106,4 @@ model.summary()
 
 example_batch = normed_train_data[:10]
 example_result = model.predict(example_batch)
-example_result
+print(example_result)
