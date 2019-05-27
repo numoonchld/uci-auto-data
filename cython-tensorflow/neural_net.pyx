@@ -1,3 +1,5 @@
+#cython: language_level=3
+
 # import ml libraries 
 import numpy as np
 import pandas as pd
@@ -6,7 +8,6 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 import tensorflow as tf
-
 import keras
 
 import pickle
@@ -14,8 +15,16 @@ import pickle
 ### IMPORTS: ==================================================================
 
 ## unsplit data:
-data_path = 'csv/00-cleaned-up-data.csv'
+data_path = '../csv/00-cleaned-up-data.csv'
 df = pd.read_csv(data_path)
+
+## training data:
+x_train = pd.read_csv('../csv/02-x_train.csv')
+y_train = pd.read_csv('../csv/02-y_train.csv')
+
+## test data:
+x_test = pd.read_csv('../csv/02-x_test.csv')
+y_test = pd.read_csv('../csv/02-y_test.csv')
 
 ### PRE-PROCESSING: ===========================================================
 
@@ -72,38 +81,63 @@ train_stats = train_data.describe().transpose()
 normed_train_data = (train_data - train_stats['mean']) / train_stats['std']
 normed_test_data = (test_data - train_stats['mean']) / train_stats['std']
 
-print(normed_train_data)
-print(normed_test_data)
+# print(normed_train_data)
+# print(normed_test_data)
 
 ### KERAS MODEL: ===============================================================
 
-# Keras: The Sequential model is a linear stack of layers.
+# print(len(normed_train_data.keys()))
+# print(normed_train_data.shape)
 
-# setup model within a function 
+# print(len(normed_train_data.columns))
+# print(normed_train_data.columns)
 
-def build_model():
+## narrowed-down features: --------------------------------------------------------
 
-  model = keras.Sequential([
-    keras.layers.Dense(64, input_shape=[len(train_data.keys())] ),
-    keras.layers.Activation('relu'),
-    keras.layers.Dense(64),
-    keras.layers.Activation('relu'),
-    keras.layers.Dense(1)
-  ])
+# kliene = normed_train_data[['engine-size', 'bore', 'stroke', 'compression-ratio']]
+# essent = normed_train_data[['engine-size', 'bore', 'stroke', 'compression-ratio']]
+# essent_plus = normed_train_data[['engine-size', 'bore', 'stroke', 'compression-ratio']]
 
-  optimizer = keras.optimizers.RMSprop(0.001)
+# setup MLP model generating function
+cpdef build_mlp_model():
 
-  model.compile(loss='mean_squared_error',
-                optimizer=optimizer,
-                metrics=['mean_absolute_error', 'mean_squared_error'])
+    model = keras.Sequential([
+        keras.layers.Dense(1024, activation = 'sigmoid', input_dim = len(normed_train_data.keys())),
+        keras.layers.Dense(512, activation = 'sigmoid'),
+        keras.layers.Dense(64, activation = 'relu'),
+        keras.layers.Dense(1)
+    ])
 
-  return model
+    model.compile(loss='mse',
+                  optimizer=keras.optimizers.SGD(lr=0.01, momentum=0.9, decay=0.001, nesterov=True),
+                  metrics=['mae', 'mse'])
 
-model = build_model()
-model.summary()
+    return model
 
-# verify model before training
 
+model = build_mlp_model()
+# model.summary()
+
+## model verification: ----------------------------------------------------------
+
+# example_batch = kliene[:10]
 example_batch = normed_train_data[:10]
+# print(example_batch)
 example_result = model.predict(example_batch)
 print(example_result)
+
+### TRAIN MODEL: ====================================================================
+
+# Display training progress by printing a single dot for each completed epoch
+class PrintDot(keras.callbacks.Callback):
+  def on_epoch_end(self, epoch, logs):
+    print('.', end = '')
+    if epoch % 100 == 0: print('\nEPOCH: ', epoch, '\n')
+    
+
+EPOCHS = 1000
+
+history = model.fit(
+  normed_train_data, train_target,
+  epochs=EPOCHS, validation_split = 0.2, verbose=0,
+  callbacks=[PrintDot()])
