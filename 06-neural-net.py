@@ -36,7 +36,7 @@ df = df.drop(columns=['engine-location'])
 
 for key in df.keys():
 
-    if key != 'price' and df[key].dtype != 'O':
+    if key != 'price' and key != 'symboling' and df[key].dtype != 'O':
         
         print(key)
         # print(ohe[key].shape, ohe['price'].shape)

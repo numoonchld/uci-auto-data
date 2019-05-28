@@ -47,11 +47,11 @@ plt.figure(4)
 sns.regplot(x="normalized-losses", y="price", data=df)
 plt.savefig('plots/01-a-reg-plot-normalized-losses.png')
 
-# symboling:price
-print(df[["symboling", "price"]].corr())
-plt.figure(5)
-sns.regplot(x="symboling", y="price", data=df)
-plt.savefig('plots/01-a-reg-plot-symboling.png')
+# # symboling:price
+# print(df[["symboling", "price"]].corr())
+# plt.figure(5)
+# sns.regplot(x="symboling", y="price", data=df)
+# plt.savefig('plots/01-a-reg-plot-symboling.png')
 
 
 ## categorical correlation: -------------------
@@ -85,5 +85,45 @@ plt.figure(9)
 print(df["make"].value_counts())
 sns.boxplot(x="make", y="price", data=df)
 plt.savefig('plots/01-b-box-plot-make.png')
+
+# num-of-doors:price
+plt.figure(10)
+print(df["num-of-doors"].value_counts())
+sns.boxplot(x="num-of-doors", y="price", data=df)
+plt.savefig('plots/01-b-box-plot-num-of-doors.png')
+
+# symboling:price
+plt.figure(11)
+print(df["symboling"].value_counts())
+sns.boxplot(x="symboling", y="price", data=df)
+plt.savefig('plots/01-b-box-plot-symboling.png')
+
+# num-of-cylinders:price
+plt.figure(12)
+print(df["num-of-cylinders"].value_counts())
+sns.boxplot(x="num-of-cylinders", y="price", data=df)
+plt.savefig('plots/01-b-box-plot-num-of-cylinders.png')
+
+# engine-type:price
+plt.figure(13)
+print(df["engine-type"].value_counts())
+sns.boxplot(x="engine-type", y="price", data=df)
+plt.savefig('plots/01-b-box-plot-engine-type.png')
+
+
+# fuel-system:price
+plt.figure(14)
+print(df["fuel-type"].value_counts())
+sns.boxplot(x="fuel-type", y="price", data=df)
+plt.savefig('plots/01-b-box-plot-fuel-type.png')
+
+# :price
+plt.figure(15)
+print(df["engine-location"].value_counts())
+sns.boxplot(x="engine-location", y="price", data=df)
+plt.savefig('plots/01-b-box-plot-engine-location.png')
+
+
+
 
 # plt.show()
