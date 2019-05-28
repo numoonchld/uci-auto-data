@@ -79,10 +79,41 @@ print('\n')
 plt.figure(0, figsize=(12, 10))
 
 ax1 = sns.distplot(y_test, hist=False, color="r", label='True Values')
+ax2 = sns.distplot(cross_val_predict(lm_engine_size, x_test[['engine-size']], y_test, cv=2), hist=False, color="b", label='Predicted Values', ax = ax1)
+
+plt.title('Engine-Size:Price')
+plt.xlabel('Price (in dollars)')
+plt.ylabel('Proportion of Cars')
+plt.savefig('plots/05-a-dist-plot-engine-size-2-folds-cv.png')
+
+plt.figure(1, figsize=(12, 10))
+
+ax1 = sns.distplot(y_test, hist=False, color="r", label='True Values')
+ax2 = sns.distplot(cross_val_predict(lm_engine_size, x_test[['engine-size']], y_test, cv=3), hist=False, color="b", label='Predicted Values', ax = ax1)
+
+plt.title('Engine-Size:Price')
+plt.xlabel('Price (in dollars)')
+plt.ylabel('Proportion of Cars')
+plt.savefig('plots/05-a-dist-plot-engine-size-3-folds-cv.png')
+
+plt.figure(2, figsize=(12, 10))
+
+ax1 = sns.distplot(y_test, hist=False, color="r", label='True Values')
 ax2 = sns.distplot(cross_val_predict(lm_engine_size, x_test[['engine-size']], y_test, cv=4), hist=False, color="b", label='Predicted Values', ax = ax1)
 
 plt.title('Engine-Size:Price')
 plt.xlabel('Price (in dollars)')
 plt.ylabel('Proportion of Cars')
-plt.savefig('plots/05-a-dist-plot-engine-size.png')
+plt.savefig('plots/05-a-dist-plot-engine-size-4-folds-cv.png')
+
+plt.figure(3, figsize=(12, 10))
+
+ax1 = sns.distplot(y_test, hist=False, color="r", label='True Values')
+ax2 = sns.distplot(cross_val_predict(lm_engine_size, x_test[['engine-size']], y_test, cv=5), hist=False, color="b", label='Predicted Values', ax = ax1)
+
+plt.title('Engine-Size:Price')
+plt.xlabel('Price (in dollars)')
+plt.ylabel('Proportion of Cars')
+plt.savefig('plots/05-a-dist-plot-engine-size-5-folds-cv.png')
+
 

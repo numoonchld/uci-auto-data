@@ -16,7 +16,7 @@ import pickle
 ## unsplit data:
 data_path = 'csv/00-cleaned-up-data.csv'
 df = pd.read_csv(data_path)
-# print('number of observations in dataset: ', df.shape)
+print('number of observations in dataset: ', df.shape)
 
 # ## training data:
 # x_train = pd.read_csv('csv/02-x_train.csv')
@@ -34,29 +34,29 @@ df = df.drop(columns=['engine-location'])
 
 #--- correlation plots and regression line equations:
 
-# for key in df.keys():
+for key in df.keys():
 
-#     if key != 'price' and df[key].dtype != 'O':
+    if key != 'price' and df[key].dtype != 'O':
         
-#         print(key)
-#         # print(ohe[key].shape, ohe['price'].shape)
-#         slope, intercept, r_value, p_value, std_err = sp.stats.linregress(df[key], df['price'])
+        print(key)
+        # print(ohe[key].shape, ohe['price'].shape)
+        slope, intercept, r_value, p_value, std_err = sp.stats.linregress(df[key], df['price'])
         
-#         # save plot for visual inspection
-#         fig = plt.figure()
-#         sns.regplot(x=key, y="price", data=df)
-#         plt.title('Slope: ' + str(slope) + '; Intercept: ' + str(intercept))
-#         plt.savefig('plots/feature-influence/06-a-reg-plot-'+ key +'.png')
-#         plt.close(fig)
+        # save plot for visual inspection
+        fig = plt.figure()
+        sns.regplot(x=key, y="price", data=df)
+        plt.title('Slope: ' + str(slope) + '; Intercept: ' + str(intercept))
+        plt.savefig('plots/feature-influence/06-a-reg-plot-'+ key +'.png')
+        plt.close(fig)
 
-#         print('saved plot for: ', key, '; reg-line slope: ', slope, '; slope-angle: ', np.rad2deg(np.arctan(slope)))
+        print('saved plot for: ', key, '; reg-line slope: ', slope, '; slope-angle: ', np.rad2deg(np.arctan(slope)))
 
-#         # from visual inspection of correlation plots, any regression line with an abolsute value of 5000 is assumed to indicate a strong correlation between predictor and target; only those will be used to train the neural net; the rest of the predictor variables will be dropped
+        # from visual inspection of correlation plots, any regression line with an abolsute value of 5000 is assumed to indicate a strong correlation between predictor and target; only those will be used to train the neural net; the rest of the predictor variables will be dropped
 
-#         # if abs(slope) < 4000:
-#         #     df = df.drop(columns=[key])
+        # if abs(slope) < 4000:
+        #     df = df.drop(columns=[key])
             
-#         # print(key, slope)
+        # print(key, slope)
 
 ### NARROW DOWN FEATURES: ======================================================
 # this one-hot encoding makes a total of 69 predictor variables to predict the target (price) variable

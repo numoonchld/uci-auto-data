@@ -1,4 +1,4 @@
-#cython: language_level=3
+# cython: language_level=3
 
 # import ml libraries 
 import numpy as np
@@ -7,7 +7,7 @@ import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
 
-import tensorflow as tf
+# import tensorflow as tf
 import keras
 
 import pickle
@@ -36,7 +36,7 @@ df = df[group1]
 ohe = pd.get_dummies(df)
 #ohe = pd.get_dummies(ohe, columns=['symboling'])
 # print(ohe.keys())
-
+print(ohe.shape)
 
 ### TEST-TRAIN SPLIT: ==========================================================
 
@@ -174,3 +174,4 @@ plt.hist(error, bins = 25)
 plt.xlabel("Prediction Error [USD]")
 _ = plt.ylabel("Count")
 plt.show()
+

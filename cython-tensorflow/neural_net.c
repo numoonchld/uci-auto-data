@@ -1258,7 +1258,6 @@ static const char __pyx_k_df[] = "df";
 static const char __pyx_k_lr[] = "lr";
 static const char __pyx_k_np[] = "np";
 static const char __pyx_k_pd[] = "pd";
-static const char __pyx_k_tf[] = "tf";
 static const char __pyx_k__23[] = "_";
 static const char __pyx_k_doc[] = "__doc__";
 static const char __pyx_k_end[] = "end";
@@ -1305,6 +1304,7 @@ static const char __pyx_k_model[] = "model";
 static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_price[] = "price";
 static const char __pyx_k_print[] = "print";
+static const char __pyx_k_shape[] = "shape";
 static const char __pyx_k_EPOCHS[] = "EPOCHS";
 static const char __pyx_k_beta_1[] = "beta_1";
 static const char __pyx_k_beta_2[] = "beta_2";
@@ -1359,7 +1359,6 @@ static const char __pyx_k_horsepower[] = "horsepower";
 static const char __pyx_k_matplotlib[] = "matplotlib";
 static const char __pyx_k_neural_net[] = "neural_net";
 static const char __pyx_k_optimizers[] = "optimizers";
-static const char __pyx_k_tensorflow[] = "tensorflow";
 static const char __pyx_k_train_data[] = "train_data";
 static const char __pyx_k_Train_Error[] = "Train Error";
 static const char __pyx_k_engine_size[] = "engine-size";
@@ -1519,6 +1518,7 @@ static PyObject *__pyx_n_s_scatter;
 static PyObject *__pyx_n_s_seaborn;
 static PyObject *__pyx_n_s_seed;
 static PyObject *__pyx_n_s_self;
+static PyObject *__pyx_n_s_shape;
 static PyObject *__pyx_n_s_show;
 static PyObject *__pyx_n_u_sigmoid;
 static PyObject *__pyx_n_s_sns;
@@ -1526,12 +1526,10 @@ static PyObject *__pyx_n_u_square;
 static PyObject *__pyx_n_u_std;
 static PyObject *__pyx_n_s_summary;
 static PyObject *__pyx_n_s_tail;
-static PyObject *__pyx_n_s_tensorflow;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_test_data;
 static PyObject *__pyx_n_s_test_predictions;
 static PyObject *__pyx_n_s_test_target;
-static PyObject *__pyx_n_s_tf;
 static PyObject *__pyx_n_s_train_data;
 static PyObject *__pyx_n_s_train_stats;
 static PyObject *__pyx_n_s_train_target;
@@ -2799,6 +2797,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_seaborn, __pyx_k_seaborn, sizeof(__pyx_k_seaborn), 0, 0, 1, 1},
   {&__pyx_n_s_seed, __pyx_k_seed, sizeof(__pyx_k_seed), 0, 0, 1, 1},
   {&__pyx_n_s_self, __pyx_k_self, sizeof(__pyx_k_self), 0, 0, 1, 1},
+  {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
   {&__pyx_n_s_show, __pyx_k_show, sizeof(__pyx_k_show), 0, 0, 1, 1},
   {&__pyx_n_u_sigmoid, __pyx_k_sigmoid, sizeof(__pyx_k_sigmoid), 0, 1, 0, 1},
   {&__pyx_n_s_sns, __pyx_k_sns, sizeof(__pyx_k_sns), 0, 0, 1, 1},
@@ -2806,12 +2805,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_u_std, __pyx_k_std, sizeof(__pyx_k_std), 0, 1, 0, 1},
   {&__pyx_n_s_summary, __pyx_k_summary, sizeof(__pyx_k_summary), 0, 0, 1, 1},
   {&__pyx_n_s_tail, __pyx_k_tail, sizeof(__pyx_k_tail), 0, 0, 1, 1},
-  {&__pyx_n_s_tensorflow, __pyx_k_tensorflow, sizeof(__pyx_k_tensorflow), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_test_data, __pyx_k_test_data, sizeof(__pyx_k_test_data), 0, 0, 1, 1},
   {&__pyx_n_s_test_predictions, __pyx_k_test_predictions, sizeof(__pyx_k_test_predictions), 0, 0, 1, 1},
   {&__pyx_n_s_test_target, __pyx_k_test_target, sizeof(__pyx_k_test_target), 0, 0, 1, 1},
-  {&__pyx_n_s_tf, __pyx_k_tf, sizeof(__pyx_k_tf), 0, 0, 1, 1},
   {&__pyx_n_s_train_data, __pyx_k_train_data, sizeof(__pyx_k_train_data), 0, 0, 1, 1},
   {&__pyx_n_s_train_stats, __pyx_k_train_stats, sizeof(__pyx_k_train_stats), 0, 0, 1, 1},
   {&__pyx_n_s_train_target, __pyx_k_train_target, sizeof(__pyx_k_train_target), 0, 0, 1, 1},
@@ -2825,7 +2822,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 39, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -3008,6 +3005,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * plt.xlabel("Prediction Error [USD]")
  * _ = plt.ylabel("Count")             # <<<<<<<<<<<<<<
  * plt.show()
+ * 
  */
   __pyx_tuple__22 = PyTuple_Pack(1, __pyx_n_u_Count); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
@@ -3349,7 +3347,7 @@ if (!__Pyx_RefNanny) {
  * import seaborn as sns
  * from matplotlib import pyplot as plt             # <<<<<<<<<<<<<<
  * 
- * import tensorflow as tf
+ * # import tensorflow as tf
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3365,21 +3363,9 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "neural_net.pyx":10
- * from matplotlib import pyplot as plt
- * 
- * import tensorflow as tf             # <<<<<<<<<<<<<<
- * import keras
- * 
- */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_tensorflow, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_tf, __pyx_t_2) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
   /* "neural_net.pyx":11
  * 
- * import tensorflow as tf
+ * # import tensorflow as tf
  * import keras             # <<<<<<<<<<<<<<
  * 
  * import pickle
@@ -3507,6 +3493,23 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_ohe, __pyx_t_1) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "neural_net.pyx":39
+ * #ohe = pd.get_dummies(ohe, columns=['symboling'])
+ * # print(ohe.keys())
+ * print(ohe.shape)             # <<<<<<<<<<<<<<
+ * 
+ * ### TEST-TRAIN SPLIT: ==========================================================
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ohe); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "neural_net.pyx":43
@@ -4354,6 +4357,7 @@ if (!__Pyx_RefNanny) {
  * plt.xlabel("Prediction Error [USD]")
  * _ = plt.ylabel("Count")             # <<<<<<<<<<<<<<
  * plt.show()
+ * 
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4370,6 +4374,7 @@ if (!__Pyx_RefNanny) {
  * plt.xlabel("Prediction Error [USD]")
  * _ = plt.ylabel("Count")
  * plt.show()             # <<<<<<<<<<<<<<
+ * 
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4382,7 +4387,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "neural_net.pyx":1
- * #cython: language_level=3             # <<<<<<<<<<<<<<
+ * # cython: language_level=3             # <<<<<<<<<<<<<<
  * 
  * # import ml libraries
  */
