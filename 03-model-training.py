@@ -87,3 +87,25 @@ pickle.dump(lm_build_dim, open(filename, 'wb'))
 
 filename = 'models/lm_car_specs.sav'
 pickle.dump(lm_car_specs, open(filename, 'wb'))
+
+### PLOT ENGINE-SIZE:PRICE MODEL: -------------------------
+
+plt.figure(0)
+plt.scatter(x_train[['engine-size']], y_train)
+plt.xlabel('engine-size')
+plt.ylabel('price')
+
+x_bounds = plt.xlim()
+y_bounds = plt.ylim()
+print(x_bounds, y_bounds)
+
+x_vals = np.linspace(x_bounds[0],x_bounds[1],num=50)
+y_vals = lm_engine_size.intercept_ + lm_engine_size.coef_ * x_vals
+print(x_vals, y_vals)
+
+plt.plot(x_vals, y_vals[0], '--')
+
+plt.title('Engine-Size based Linear Price Estimator')
+
+plt.savefig('plots/03-model-engine-size.png')
+plt.close()

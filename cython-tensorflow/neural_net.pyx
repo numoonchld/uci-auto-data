@@ -64,7 +64,7 @@ def build_mlp_model():
 
     model = keras.Sequential([
         # keras.layers.Dense(64, activation = 'sigmoid', kernel_initializer=keras.initializers.RandomNormal(mean=0.001, stddev=0.05, seed=1), input_dim = len(normed_train_data.keys())),
-        keras.layers.Dense(64, activation = 'sigmoid', kernel_initializer=keras.initializers.glorot_normal(seed=3), input_dim = len(normed_train_data.keys())),
+        keras.layers.Dense(32, activation = 'sigmoid', kernel_initializer=keras.initializers.glorot_normal(seed=3), input_dim = len(normed_train_data.keys())),
         # keras.layers.Dense(64, activation = 'sigmoid', kernel_initializer=keras.initializers.RandomNormal(mean=0.001, stddev=0.05, seed=1), input_dim = len(normed_train_data.keys())),
         keras.layers.Dropout(rate=0.25, noise_shape=None, seed=7),
         keras.layers.Dense(8, activation = 'relu'),
@@ -186,3 +186,14 @@ _ = plt.ylabel("Count")
 plt.savefig('nn-plots/hist-test-vs-predicted-error-distribution.png')
 plt.show()
 
+# distribution plot: -----------------------------------
+
+plt.figure(4, figsize=(12, 10))
+
+ax1 = sns.distplot(test_target, hist=False, color="r", label='True Values')
+ax2 = sns.distplot(test_predictions, hist=False, color="b", label='Predicted Values', ax=ax1)
+
+plt.title("['engine-size','horsepower','city-mpg','highway-mpg','body-style']:Price")
+plt.xlabel('Price (in dollars)')
+plt.ylabel('Proportion of Cars')
+plt.savefig('nn-plots/dist-plot-test-data.png')
