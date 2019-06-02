@@ -1266,6 +1266,7 @@ static const char __pyx_k_pop[] = "pop";
 static const char __pyx_k_sns[] = "sns";
 static const char __pyx_k_std[] = "std";
 static const char __pyx_k_Adam[] = "Adam";
+static const char __pyx_k_bold[] = "bold";
 static const char __pyx_k_drop[] = "drop";
 static const char __pyx_k_frac[] = "frac";
 static const char __pyx_k_hist[] = "hist";
@@ -1283,6 +1284,7 @@ static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_Dense[] = "Dense";
 static const char __pyx_k_EPOCH[] = "\nEPOCH: ";
 static const char __pyx_k_array[] = "array";
+static const char __pyx_k_close[] = "close";
 static const char __pyx_k_color[] = "color";
 static const char __pyx_k_decay[] = "decay";
 static const char __pyx_k_epoch[] = "epoch";
@@ -1307,6 +1309,7 @@ static const char __pyx_k_module[] = "__module__";
 static const char __pyx_k_pandas[] = "pandas";
 static const char __pyx_k_pyplot[] = "pyplot";
 static const char __pyx_k_sample[] = "sample";
+static const char __pyx_k_weight[] = "weight";
 static const char __pyx_k_xlabel[] = "xlabel";
 static const char __pyx_k_ylabel[] = "ylabel";
 static const char __pyx_k_Dropout[] = "Dropout";
@@ -1331,6 +1334,7 @@ static const char __pyx_k_describe[] = "describe";
 static const char __pyx_k_distplot[] = "distplot";
 static const char __pyx_k_qualname[] = "__qualname__";
 static const char __pyx_k_r2_score[] = "r2_score";
+static const char __pyx_k_rcParams[] = "rcParams";
 static const char __pyx_k_read_csv[] = "read_csv";
 static const char __pyx_k_callbacks[] = "callbacks";
 static const char __pyx_k_data_path[] = "data_path";
@@ -1350,6 +1354,7 @@ static const char __pyx_k_train_data[] = "train_data";
 static const char __pyx_k_True_Values[] = "True Values";
 static const char __pyx_k_compare_pyx[] = "compare.pyx";
 static const char __pyx_k_engine_size[] = "engine-size";
+static const char __pyx_k_font_weight[] = "font.weight";
 static const char __pyx_k_get_dummies[] = "get_dummies";
 static const char __pyx_k_highway_mpg[] = "highway-mpg";
 static const char __pyx_k_noise_shape[] = "noise_shape";
@@ -1361,15 +1366,14 @@ static const char __pyx_k_random_state[] = "random_state";
 static const char __pyx_k_train_target[] = "train_target";
 static const char __pyx_k_example_batch[] = "example_batch";
 static const char __pyx_k_glorot_normal[] = "glorot_normal";
-static const char __pyx_k_KerasRegressor[] = "KerasRegressor";
 static const char __pyx_k_example_result[] = "example_result";
 static const char __pyx_k_build_mlp_model[] = "build_mlp_model";
 static const char __pyx_k_sklearn_metrics[] = "sklearn.metrics";
 static const char __pyx_k_LinearRegression[] = "LinearRegression";
 static const char __pyx_k_Price_in_dollars[] = "Price (in dollars)";
+static const char __pyx_k_axes_labelweight[] = "axes.labelweight";
 static const char __pyx_k_normed_test_data[] = "normed_test_data";
 static const char __pyx_k_validation_split[] = "validation_split";
-static const char __pyx_k_cross_val_predict[] = "cross_val_predict";
 static const char __pyx_k_normed_train_data[] = "normed_train_data";
 static const char __pyx_k_out_of_sample_MSE[] = "out-of-sample MSE";
 static const char __pyx_k_out_of_sample_R_2[] = "out-of-sample R^2";
@@ -1381,10 +1385,8 @@ static const char __pyx_k_sklearn_linear_model[] = "sklearn.linear_model";
 static const char __pyx_k_Neural_Net_Prediction[] = "Neural Net Prediction";
 static const char __pyx_k_PrintDot_on_epoch_end[] = "PrintDot.on_epoch_end";
 static const char __pyx_k_Linear_Model_Prediction[] = "Linear Model Prediction";
-static const char __pyx_k_sklearn_model_selection[] = "sklearn.model_selection";
 static const char __pyx_k_plots_a_resid_plot_nn_png[] = "plots/a-resid-plot-nn.png";
 static const char __pyx_k_csv_00_cleaned_up_data_csv[] = "../csv/00-cleaned-up-data.csv";
-static const char __pyx_k_keras_wrappers_scikit_learn[] = "keras.wrappers.scikit_learn";
 static const char __pyx_k_Neural_Net_Regression_Accuracy[] = "\nNeural Net Regression Accuracy Metrics";
 static const char __pyx_k_Multi_variate_Linear_Regression[] = "\nMulti-variate Linear Regression Accuracy Metrics";
 static const char __pyx_k_engine_size_horsepower_city_mpg[] = "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price";
@@ -1396,7 +1398,6 @@ static PyObject *__pyx_n_s_Dense;
 static PyObject *__pyx_n_s_Dropout;
 static PyObject *__pyx_kp_u_EPOCH;
 static PyObject *__pyx_n_s_EPOCHS;
-static PyObject *__pyx_n_s_KerasRegressor;
 static PyObject *__pyx_n_s_LinearRegression;
 static PyObject *__pyx_kp_u_Linear_Model_Prediction;
 static PyObject *__pyx_kp_u_Multi_variate_Linear_Regression;
@@ -1418,19 +1419,21 @@ static PyObject *__pyx_n_s_ax;
 static PyObject *__pyx_n_s_ax1;
 static PyObject *__pyx_n_s_ax2;
 static PyObject *__pyx_n_s_ax3;
+static PyObject *__pyx_kp_u_axes_labelweight;
 static PyObject *__pyx_n_s_beta_1;
 static PyObject *__pyx_n_s_beta_2;
 static PyObject *__pyx_kp_u_body_style;
+static PyObject *__pyx_n_u_bold;
 static PyObject *__pyx_n_s_build_mlp_model;
 static PyObject *__pyx_n_u_c;
 static PyObject *__pyx_n_s_callbacks;
 static PyObject *__pyx_kp_u_city_mpg;
 static PyObject *__pyx_n_s_cline_in_traceback;
+static PyObject *__pyx_n_s_close;
 static PyObject *__pyx_n_s_color;
 static PyObject *__pyx_n_s_compare;
 static PyObject *__pyx_kp_s_compare_pyx;
 static PyObject *__pyx_n_s_compile;
-static PyObject *__pyx_n_s_cross_val_predict;
 static PyObject *__pyx_kp_u_csv_00_cleaned_up_data_csv;
 static PyObject *__pyx_n_s_data_path;
 static PyObject *__pyx_n_s_decay;
@@ -1451,6 +1454,7 @@ static PyObject *__pyx_n_s_figsize;
 static PyObject *__pyx_n_s_figure;
 static PyObject *__pyx_n_s_fit;
 static PyObject *__pyx_n_s_flatten;
+static PyObject *__pyx_kp_u_font_weight;
 static PyObject *__pyx_n_s_frac;
 static PyObject *__pyx_n_s_get_dummies;
 static PyObject *__pyx_n_s_glorot_normal;
@@ -1464,7 +1468,6 @@ static PyObject *__pyx_n_s_initializers;
 static PyObject *__pyx_n_s_input_dim;
 static PyObject *__pyx_n_u_k;
 static PyObject *__pyx_n_s_keras;
-static PyObject *__pyx_n_s_keras_wrappers_scikit_learn;
 static PyObject *__pyx_n_s_kernel_initializer;
 static PyObject *__pyx_n_s_keys;
 static PyObject *__pyx_n_s_label;
@@ -1512,6 +1515,7 @@ static PyObject *__pyx_n_s_qualname;
 static PyObject *__pyx_n_s_r2_score;
 static PyObject *__pyx_n_s_random_state;
 static PyObject *__pyx_n_s_rate;
+static PyObject *__pyx_n_s_rcParams;
 static PyObject *__pyx_n_s_read_csv;
 static PyObject *__pyx_n_u_relu;
 static PyObject *__pyx_n_s_residplot;
@@ -1524,7 +1528,6 @@ static PyObject *__pyx_n_s_shape;
 static PyObject *__pyx_n_u_sigmoid;
 static PyObject *__pyx_n_s_sklearn_linear_model;
 static PyObject *__pyx_n_s_sklearn_metrics;
-static PyObject *__pyx_n_s_sklearn_model_selection;
 static PyObject *__pyx_n_s_sns;
 static PyObject *__pyx_n_u_std;
 static PyObject *__pyx_n_s_summary;
@@ -1538,6 +1541,7 @@ static PyObject *__pyx_n_s_train_target;
 static PyObject *__pyx_n_s_transpose;
 static PyObject *__pyx_n_s_validation_split;
 static PyObject *__pyx_n_s_verbose;
+static PyObject *__pyx_n_s_weight;
 static PyObject *__pyx_n_s_xlabel;
 static PyObject *__pyx_n_u_y;
 static PyObject *__pyx_n_s_ylabel;
@@ -2231,7 +2235,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_Dropout, __pyx_k_Dropout, sizeof(__pyx_k_Dropout), 0, 0, 1, 1},
   {&__pyx_kp_u_EPOCH, __pyx_k_EPOCH, sizeof(__pyx_k_EPOCH), 0, 1, 0, 0},
   {&__pyx_n_s_EPOCHS, __pyx_k_EPOCHS, sizeof(__pyx_k_EPOCHS), 0, 0, 1, 1},
-  {&__pyx_n_s_KerasRegressor, __pyx_k_KerasRegressor, sizeof(__pyx_k_KerasRegressor), 0, 0, 1, 1},
   {&__pyx_n_s_LinearRegression, __pyx_k_LinearRegression, sizeof(__pyx_k_LinearRegression), 0, 0, 1, 1},
   {&__pyx_kp_u_Linear_Model_Prediction, __pyx_k_Linear_Model_Prediction, sizeof(__pyx_k_Linear_Model_Prediction), 0, 1, 0, 0},
   {&__pyx_kp_u_Multi_variate_Linear_Regression, __pyx_k_Multi_variate_Linear_Regression, sizeof(__pyx_k_Multi_variate_Linear_Regression), 0, 1, 0, 0},
@@ -2253,19 +2256,21 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_ax1, __pyx_k_ax1, sizeof(__pyx_k_ax1), 0, 0, 1, 1},
   {&__pyx_n_s_ax2, __pyx_k_ax2, sizeof(__pyx_k_ax2), 0, 0, 1, 1},
   {&__pyx_n_s_ax3, __pyx_k_ax3, sizeof(__pyx_k_ax3), 0, 0, 1, 1},
+  {&__pyx_kp_u_axes_labelweight, __pyx_k_axes_labelweight, sizeof(__pyx_k_axes_labelweight), 0, 1, 0, 0},
   {&__pyx_n_s_beta_1, __pyx_k_beta_1, sizeof(__pyx_k_beta_1), 0, 0, 1, 1},
   {&__pyx_n_s_beta_2, __pyx_k_beta_2, sizeof(__pyx_k_beta_2), 0, 0, 1, 1},
   {&__pyx_kp_u_body_style, __pyx_k_body_style, sizeof(__pyx_k_body_style), 0, 1, 0, 0},
+  {&__pyx_n_u_bold, __pyx_k_bold, sizeof(__pyx_k_bold), 0, 1, 0, 1},
   {&__pyx_n_s_build_mlp_model, __pyx_k_build_mlp_model, sizeof(__pyx_k_build_mlp_model), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
   {&__pyx_n_s_callbacks, __pyx_k_callbacks, sizeof(__pyx_k_callbacks), 0, 0, 1, 1},
   {&__pyx_kp_u_city_mpg, __pyx_k_city_mpg, sizeof(__pyx_k_city_mpg), 0, 1, 0, 0},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
+  {&__pyx_n_s_close, __pyx_k_close, sizeof(__pyx_k_close), 0, 0, 1, 1},
   {&__pyx_n_s_color, __pyx_k_color, sizeof(__pyx_k_color), 0, 0, 1, 1},
   {&__pyx_n_s_compare, __pyx_k_compare, sizeof(__pyx_k_compare), 0, 0, 1, 1},
   {&__pyx_kp_s_compare_pyx, __pyx_k_compare_pyx, sizeof(__pyx_k_compare_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_compile, __pyx_k_compile, sizeof(__pyx_k_compile), 0, 0, 1, 1},
-  {&__pyx_n_s_cross_val_predict, __pyx_k_cross_val_predict, sizeof(__pyx_k_cross_val_predict), 0, 0, 1, 1},
   {&__pyx_kp_u_csv_00_cleaned_up_data_csv, __pyx_k_csv_00_cleaned_up_data_csv, sizeof(__pyx_k_csv_00_cleaned_up_data_csv), 0, 1, 0, 0},
   {&__pyx_n_s_data_path, __pyx_k_data_path, sizeof(__pyx_k_data_path), 0, 0, 1, 1},
   {&__pyx_n_s_decay, __pyx_k_decay, sizeof(__pyx_k_decay), 0, 0, 1, 1},
@@ -2286,6 +2291,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_figure, __pyx_k_figure, sizeof(__pyx_k_figure), 0, 0, 1, 1},
   {&__pyx_n_s_fit, __pyx_k_fit, sizeof(__pyx_k_fit), 0, 0, 1, 1},
   {&__pyx_n_s_flatten, __pyx_k_flatten, sizeof(__pyx_k_flatten), 0, 0, 1, 1},
+  {&__pyx_kp_u_font_weight, __pyx_k_font_weight, sizeof(__pyx_k_font_weight), 0, 1, 0, 0},
   {&__pyx_n_s_frac, __pyx_k_frac, sizeof(__pyx_k_frac), 0, 0, 1, 1},
   {&__pyx_n_s_get_dummies, __pyx_k_get_dummies, sizeof(__pyx_k_get_dummies), 0, 0, 1, 1},
   {&__pyx_n_s_glorot_normal, __pyx_k_glorot_normal, sizeof(__pyx_k_glorot_normal), 0, 0, 1, 1},
@@ -2299,7 +2305,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_input_dim, __pyx_k_input_dim, sizeof(__pyx_k_input_dim), 0, 0, 1, 1},
   {&__pyx_n_u_k, __pyx_k_k, sizeof(__pyx_k_k), 0, 1, 0, 1},
   {&__pyx_n_s_keras, __pyx_k_keras, sizeof(__pyx_k_keras), 0, 0, 1, 1},
-  {&__pyx_n_s_keras_wrappers_scikit_learn, __pyx_k_keras_wrappers_scikit_learn, sizeof(__pyx_k_keras_wrappers_scikit_learn), 0, 0, 1, 1},
   {&__pyx_n_s_kernel_initializer, __pyx_k_kernel_initializer, sizeof(__pyx_k_kernel_initializer), 0, 0, 1, 1},
   {&__pyx_n_s_keys, __pyx_k_keys, sizeof(__pyx_k_keys), 0, 0, 1, 1},
   {&__pyx_n_s_label, __pyx_k_label, sizeof(__pyx_k_label), 0, 0, 1, 1},
@@ -2347,6 +2352,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_r2_score, __pyx_k_r2_score, sizeof(__pyx_k_r2_score), 0, 0, 1, 1},
   {&__pyx_n_s_random_state, __pyx_k_random_state, sizeof(__pyx_k_random_state), 0, 0, 1, 1},
   {&__pyx_n_s_rate, __pyx_k_rate, sizeof(__pyx_k_rate), 0, 0, 1, 1},
+  {&__pyx_n_s_rcParams, __pyx_k_rcParams, sizeof(__pyx_k_rcParams), 0, 0, 1, 1},
   {&__pyx_n_s_read_csv, __pyx_k_read_csv, sizeof(__pyx_k_read_csv), 0, 0, 1, 1},
   {&__pyx_n_u_relu, __pyx_k_relu, sizeof(__pyx_k_relu), 0, 1, 0, 1},
   {&__pyx_n_s_residplot, __pyx_k_residplot, sizeof(__pyx_k_residplot), 0, 0, 1, 1},
@@ -2359,7 +2365,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_u_sigmoid, __pyx_k_sigmoid, sizeof(__pyx_k_sigmoid), 0, 1, 0, 1},
   {&__pyx_n_s_sklearn_linear_model, __pyx_k_sklearn_linear_model, sizeof(__pyx_k_sklearn_linear_model), 0, 0, 1, 1},
   {&__pyx_n_s_sklearn_metrics, __pyx_k_sklearn_metrics, sizeof(__pyx_k_sklearn_metrics), 0, 0, 1, 1},
-  {&__pyx_n_s_sklearn_model_selection, __pyx_k_sklearn_model_selection, sizeof(__pyx_k_sklearn_model_selection), 0, 0, 1, 1},
   {&__pyx_n_s_sns, __pyx_k_sns, sizeof(__pyx_k_sns), 0, 0, 1, 1},
   {&__pyx_n_u_std, __pyx_k_std, sizeof(__pyx_k_std), 0, 1, 0, 1},
   {&__pyx_n_s_summary, __pyx_k_summary, sizeof(__pyx_k_summary), 0, 0, 1, 1},
@@ -2373,6 +2378,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_transpose, __pyx_k_transpose, sizeof(__pyx_k_transpose), 0, 0, 1, 1},
   {&__pyx_n_s_validation_split, __pyx_k_validation_split, sizeof(__pyx_k_validation_split), 0, 0, 1, 1},
   {&__pyx_n_s_verbose, __pyx_k_verbose, sizeof(__pyx_k_verbose), 0, 0, 1, 1},
+  {&__pyx_n_s_weight, __pyx_k_weight, sizeof(__pyx_k_weight), 0, 0, 1, 1},
   {&__pyx_n_s_xlabel, __pyx_k_xlabel, sizeof(__pyx_k_xlabel), 0, 0, 1, 1},
   {&__pyx_n_u_y, __pyx_k_y, sizeof(__pyx_k_y), 0, 1, 0, 1},
   {&__pyx_n_s_ylabel, __pyx_k_ylabel, sizeof(__pyx_k_ylabel), 0, 0, 1, 1},
@@ -2473,7 +2479,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * ## MULTI-LINEAR REGRESSION: --------------------------------------
  * plt.figure(0, figsize=(12, 10))             # <<<<<<<<<<<<<<
  * sns.residplot(lm.predict(normed_train_data), train_target)
- * plt.savefig('plots/a-resid-plot-multi-lin.png')
+ * 
  */
   __pyx_tuple__13 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
@@ -2482,132 +2488,134 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "compare.pyx":131
- * plt.figure(0, figsize=(12, 10))
- * sns.residplot(lm.predict(normed_train_data), train_target)
- * plt.savefig('plots/a-resid-plot-multi-lin.png')             # <<<<<<<<<<<<<<
+  /* "compare.pyx":135
+ * plt.rcParams["axes.labelweight"] = "bold"
  * 
- * ## NEURAL NET REGRESSION: ----------------------------------------
+ * plt.savefig('plots/a-resid-plot-multi-lin.png')             # <<<<<<<<<<<<<<
+ * plt.close()
+ * 
  */
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_u_plots_a_resid_plot_multi_lin_png); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_u_plots_a_resid_plot_multi_lin_png); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "compare.pyx":134
+  /* "compare.pyx":139
  * 
  * ## NEURAL NET REGRESSION: ----------------------------------------
  * plt.figure(1, figsize=(12, 10))             # <<<<<<<<<<<<<<
  * sns.residplot(nn.predict(normed_train_data).flatten(), train_target)
- * plt.savefig('plots/a-resid-plot-nn.png')
+ * 
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "compare.pyx":136
- * plt.figure(1, figsize=(12, 10))
- * sns.residplot(nn.predict(normed_train_data).flatten(), train_target)
- * plt.savefig('plots/a-resid-plot-nn.png')             # <<<<<<<<<<<<<<
+  /* "compare.pyx":145
+ * plt.rcParams["axes.labelweight"] = "bold"
  * 
- * ### ACCURACY (out-of-sample test): ============================================
+ * plt.savefig('plots/a-resid-plot-nn.png')             # <<<<<<<<<<<<<<
+ * plt.close()
+ * 
  */
-  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_u_plots_a_resid_plot_nn_png); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_u_plots_a_resid_plot_nn_png); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "compare.pyx":142
+  /* "compare.pyx":152
  * ## MULTI-LINEAR REGRESSION: --------------------------------------
  * 
  * print('\nMulti-variate Linear Regression Accuracy Metrics')             # <<<<<<<<<<<<<<
  * 
  * # R^2 score:
  */
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_u_Multi_variate_Linear_Regression); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_u_Multi_variate_Linear_Regression); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "compare.pyx":145
+  /* "compare.pyx":155
  * 
  * # R^2 score:
  * print('out-of-sample R^2')             # <<<<<<<<<<<<<<
  * print(r2_score(test_target, lm.predict(normed_test_data)))
  * 
  */
-  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_u_out_of_sample_R_2); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_u_out_of_sample_R_2); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "compare.pyx":149
+  /* "compare.pyx":159
  * 
  * # MSE score:
  * print('out-of-sample MSE')             # <<<<<<<<<<<<<<
  * print(mean_squared_error(test_target, lm.predict(normed_test_data)))
  * 
  */
-  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_kp_u_out_of_sample_MSE); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_kp_u_out_of_sample_MSE); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "compare.pyx":154
+  /* "compare.pyx":164
  * ## NEURAL NET REGRESSION: ----------------------------------------
  * 
  * print('\nNeural Net Regression Accuracy Metrics')             # <<<<<<<<<<<<<<
  * 
  * # R^2 score:
  */
-  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_u_Neural_Net_Regression_Accuracy); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 154, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_u_Neural_Net_Regression_Accuracy); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
 
-  /* "compare.pyx":166
+  /* "compare.pyx":176
  * ## DISTRIBUTION PLOTS: -------------------------------------------
  * 
- * plt.figure(2, figsize=(12, 10))             # <<<<<<<<<<<<<<
+ * plt.figure(2,figsize=(12, 10))             # <<<<<<<<<<<<<<
  * 
  * ax1 = sns.distplot(test_target, hist=False, color="k", label='True Values')
  */
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_int_2); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_int_2); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "compare.pyx":182
+  /* "compare.pyx":192
  *                    ax=ax1)
  * 
  * plt.title(             # <<<<<<<<<<<<<<
- *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price"
- * )
+ *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price",
+ *     weight='bold'
  */
-  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_u_engine_size_horsepower_city_mpg); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_u_engine_size_horsepower_city_mpg); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
 
-  /* "compare.pyx":185
- *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price"
+  /* "compare.pyx":196
+ *     weight='bold'
  * )
  * plt.xlabel('Price (in dollars)')             # <<<<<<<<<<<<<<
  * plt.ylabel('Proportion of Cars')
- * plt.savefig('plots/b-dist-lin-nn-compare.png')
+ * 
  */
-  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_u_Price_in_dollars); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_u_Price_in_dollars); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
 
-  /* "compare.pyx":186
+  /* "compare.pyx":197
  * )
  * plt.xlabel('Price (in dollars)')
  * plt.ylabel('Proportion of Cars')             # <<<<<<<<<<<<<<
- * plt.savefig('plots/b-dist-lin-nn-compare.png')
+ * 
+ * plt.rcParams["font.weight"] = "bold"
  */
-  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_u_Proportion_of_Cars); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_u_Proportion_of_Cars); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
 
-  /* "compare.pyx":187
- * plt.xlabel('Price (in dollars)')
- * plt.ylabel('Proportion of Cars')
+  /* "compare.pyx":202
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
  * plt.savefig('plots/b-dist-lin-nn-compare.png')             # <<<<<<<<<<<<<<
+ * plt.close()
  */
-  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_u_plots_b_dist_lin_nn_compare_png); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_u_plots_b_dist_lin_nn_compare_png); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
   __Pyx_RefNannyFinishContext();
@@ -2970,7 +2978,7 @@ if (!__Pyx_RefNanny) {
  * 
  * from sklearn.linear_model import LinearRegression             # <<<<<<<<<<<<<<
  * import keras
- * from keras.wrappers.scikit_learn import KerasRegressor
+ * #from keras.wrappers.scikit_learn import KerasRegressor
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2990,7 +2998,7 @@ if (!__Pyx_RefNanny) {
  * 
  * from sklearn.linear_model import LinearRegression
  * import keras             # <<<<<<<<<<<<<<
- * from keras.wrappers.scikit_learn import KerasRegressor
+ * #from keras.wrappers.scikit_learn import KerasRegressor
  * 
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_keras, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -2998,87 +3006,45 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_keras, __pyx_t_1) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":13
- * from sklearn.linear_model import LinearRegression
- * import keras
- * from keras.wrappers.scikit_learn import KerasRegressor             # <<<<<<<<<<<<<<
- * 
- * from sklearn.metrics import r2_score
- */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(__pyx_n_s_KerasRegressor);
-  __Pyx_GIVEREF(__pyx_n_s_KerasRegressor);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_KerasRegressor);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_keras_wrappers_scikit_learn, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_KerasRegressor); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_KerasRegressor, __pyx_t_1) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
   /* "compare.pyx":15
- * from keras.wrappers.scikit_learn import KerasRegressor
+ * #from keras.wrappers.scikit_learn import KerasRegressor
  * 
  * from sklearn.metrics import r2_score             # <<<<<<<<<<<<<<
  * from sklearn.metrics import mean_squared_error
- * from sklearn.model_selection import cross_val_predict
+ * # from sklearn.model_selection import cross_val_predict
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_r2_score);
   __Pyx_GIVEREF(__pyx_n_s_r2_score);
-  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_r2_score);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sklearn_metrics, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_r2_score); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
+  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_r2_score);
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_sklearn_metrics, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_r2_score, __pyx_t_2) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_r2_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_r2_score, __pyx_t_1) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "compare.pyx":16
  * 
  * from sklearn.metrics import r2_score
  * from sklearn.metrics import mean_squared_error             # <<<<<<<<<<<<<<
- * from sklearn.model_selection import cross_val_predict
+ * # from sklearn.model_selection import cross_val_predict
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_mean_squared_error);
   __Pyx_GIVEREF(__pyx_n_s_mean_squared_error);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_mean_squared_error);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_sklearn_metrics, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_mean_squared_error); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mean_squared_error, __pyx_t_1) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "compare.pyx":17
- * from sklearn.metrics import r2_score
- * from sklearn.metrics import mean_squared_error
- * from sklearn.model_selection import cross_val_predict             # <<<<<<<<<<<<<<
- * 
- * ### IMPORTS: ==================================================================
- */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(__pyx_n_s_cross_val_predict);
-  __Pyx_GIVEREF(__pyx_n_s_cross_val_predict);
-  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_cross_val_predict);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sklearn_model_selection, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_mean_squared_error);
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sklearn_metrics, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_cross_val_predict); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_mean_squared_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cross_val_predict, __pyx_t_2) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mean_squared_error, __pyx_t_2) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -3670,7 +3636,7 @@ if (!__Pyx_RefNanny) {
  * ## MULTI-LINEAR REGRESSION: --------------------------------------
  * plt.figure(0, figsize=(12, 10))             # <<<<<<<<<<<<<<
  * sns.residplot(lm.predict(normed_train_data), train_target)
- * plt.savefig('plots/a-resid-plot-multi-lin.png')
+ * 
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3690,8 +3656,8 @@ if (!__Pyx_RefNanny) {
  * ## MULTI-LINEAR REGRESSION: --------------------------------------
  * plt.figure(0, figsize=(12, 10))
  * sns.residplot(lm.predict(normed_train_data), train_target)             # <<<<<<<<<<<<<<
- * plt.savefig('plots/a-resid-plot-multi-lin.png')
  * 
+ * plt.rcParams["font.weight"] = "bold"
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sns); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3725,76 +3691,123 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":131
- * plt.figure(0, figsize=(12, 10))
+  /* "compare.pyx":132
  * sns.residplot(lm.predict(normed_train_data), train_target)
- * plt.savefig('plots/a-resid-plot-multi-lin.png')             # <<<<<<<<<<<<<<
  * 
- * ## NEURAL NET REGRESSION: ----------------------------------------
+ * plt.rcParams["font.weight"] = "bold"             # <<<<<<<<<<<<<<
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_savefig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rcParams); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_4, __pyx_kp_u_font_weight, __pyx_n_u_bold) < 0)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "compare.pyx":133
+ * 
+ * plt.rcParams["font.weight"] = "bold"
+ * plt.rcParams["axes.labelweight"] = "bold"             # <<<<<<<<<<<<<<
+ * 
+ * plt.savefig('plots/a-resid-plot-multi-lin.png')
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_rcParams); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  if (unlikely(PyObject_SetItem(__pyx_t_2, __pyx_kp_u_axes_labelweight, __pyx_n_u_bold) < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "compare.pyx":135
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
+ * plt.savefig('plots/a-resid-plot-multi-lin.png')             # <<<<<<<<<<<<<<
+ * plt.close()
+ * 
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_savefig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":134
+  /* "compare.pyx":136
+ * 
+ * plt.savefig('plots/a-resid-plot-multi-lin.png')
+ * plt.close()             # <<<<<<<<<<<<<<
+ * 
+ * ## NEURAL NET REGRESSION: ----------------------------------------
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "compare.pyx":139
  * 
  * ## NEURAL NET REGRESSION: ----------------------------------------
  * plt.figure(1, figsize=(12, 10))             # <<<<<<<<<<<<<<
  * sns.residplot(nn.predict(normed_train_data).flatten(), train_target)
- * plt.savefig('plots/a-resid-plot-nn.png')
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_figure); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_figure); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_figsize, __pyx_tuple__14) < 0) __PYX_ERR(0, 134, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__16, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_figsize, __pyx_tuple__14) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__16, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":135
+  /* "compare.pyx":140
  * ## NEURAL NET REGRESSION: ----------------------------------------
  * plt.figure(1, figsize=(12, 10))
  * sns.residplot(nn.predict(normed_train_data).flatten(), train_target)             # <<<<<<<<<<<<<<
- * plt.savefig('plots/a-resid-plot-nn.png')
  * 
+ * plt.rcParams["font.weight"] = "bold"
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sns); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sns); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_residplot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_residplot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_nn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_nn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_predict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_predict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_normed_train_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_normed_train_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_flatten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_flatten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_train_target); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_train_target); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
@@ -3802,74 +3815,121 @@ if (!__Pyx_RefNanny) {
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_1);
   __pyx_t_3 = 0;
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":136
- * plt.figure(1, figsize=(12, 10))
+  /* "compare.pyx":142
  * sns.residplot(nn.predict(normed_train_data).flatten(), train_target)
- * plt.savefig('plots/a-resid-plot-nn.png')             # <<<<<<<<<<<<<<
  * 
- * ### ACCURACY (out-of-sample test): ============================================
+ * plt.rcParams["font.weight"] = "bold"             # <<<<<<<<<<<<<<
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_savefig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_rcParams); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_4, __pyx_kp_u_font_weight, __pyx_n_u_bold) < 0)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "compare.pyx":143
+ * 
+ * plt.rcParams["font.weight"] = "bold"
+ * plt.rcParams["axes.labelweight"] = "bold"             # <<<<<<<<<<<<<<
+ * 
+ * plt.savefig('plots/a-resid-plot-nn.png')
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_rcParams); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_kp_u_axes_labelweight, __pyx_n_u_bold) < 0)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "compare.pyx":145
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
+ * plt.savefig('plots/a-resid-plot-nn.png')             # <<<<<<<<<<<<<<
+ * plt.close()
+ * 
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_savefig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":142
+  /* "compare.pyx":146
+ * 
+ * plt.savefig('plots/a-resid-plot-nn.png')
+ * plt.close()             # <<<<<<<<<<<<<<
+ * 
+ * ### ACCURACY (out-of-sample test): ============================================
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "compare.pyx":152
  * ## MULTI-LINEAR REGRESSION: --------------------------------------
  * 
  * print('\nMulti-variate Linear Regression Accuracy Metrics')             # <<<<<<<<<<<<<<
  * 
  * # R^2 score:
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":145
+  /* "compare.pyx":155
  * 
  * # R^2 score:
  * print('out-of-sample R^2')             # <<<<<<<<<<<<<<
  * print(r2_score(test_target, lm.predict(normed_test_data)))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":146
+  /* "compare.pyx":156
  * # R^2 score:
  * print('out-of-sample R^2')
  * print(r2_score(test_target, lm.predict(normed_test_data)))             # <<<<<<<<<<<<<<
  * 
  * # MSE score:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_r2_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_r2_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_test_target); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_test_target); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_lm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_lm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_predict); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_predict); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4);
@@ -3877,49 +3937,49 @@ if (!__Pyx_RefNanny) {
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_5);
   __pyx_t_4 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":149
+  /* "compare.pyx":159
  * 
  * # MSE score:
  * print('out-of-sample MSE')             # <<<<<<<<<<<<<<
  * print(mean_squared_error(test_target, lm.predict(normed_test_data)))
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":150
+  /* "compare.pyx":160
  * # MSE score:
  * print('out-of-sample MSE')
  * print(mean_squared_error(test_target, lm.predict(normed_test_data)))             # <<<<<<<<<<<<<<
  * 
  * ## NEURAL NET REGRESSION: ----------------------------------------
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mean_squared_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mean_squared_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_test_target); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_test_target); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_lm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_lm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_predict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_predict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -3927,66 +3987,66 @@ if (!__Pyx_RefNanny) {
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_3);
   __pyx_t_5 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":154
+  /* "compare.pyx":164
  * ## NEURAL NET REGRESSION: ----------------------------------------
  * 
  * print('\nNeural Net Regression Accuracy Metrics')             # <<<<<<<<<<<<<<
  * 
  * # R^2 score:
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 154, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":157
+  /* "compare.pyx":167
  * 
  * # R^2 score:
  * print('out-of-sample R^2')             # <<<<<<<<<<<<<<
  * print(r2_score(test_target, nn.predict(normed_test_data).flatten()))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":158
+  /* "compare.pyx":168
  * # R^2 score:
  * print('out-of-sample R^2')
  * print(r2_score(test_target, nn.predict(normed_test_data).flatten()))             # <<<<<<<<<<<<<<
  * 
  * # MSE score:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_r2_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_r2_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_test_target); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_test_target); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_nn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_predict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_predict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_flatten); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_flatten); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
@@ -3994,55 +4054,55 @@ if (!__Pyx_RefNanny) {
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":161
+  /* "compare.pyx":171
  * 
  * # MSE score:
  * print('out-of-sample MSE')             # <<<<<<<<<<<<<<
  * print(mean_squared_error(test_target, nn.predict(normed_test_data).flatten()))
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":162
+  /* "compare.pyx":172
  * # MSE score:
  * print('out-of-sample MSE')
  * print(mean_squared_error(test_target, nn.predict(normed_test_data).flatten()))             # <<<<<<<<<<<<<<
  * 
  * ## DISTRIBUTION PLOTS: -------------------------------------------
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mean_squared_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mean_squared_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_test_target); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_test_target); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_nn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_nn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_predict); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_predict); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_flatten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_flatten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4);
@@ -4050,276 +4110,343 @@ if (!__Pyx_RefNanny) {
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_5);
   __pyx_t_4 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "compare.pyx":166
+  /* "compare.pyx":176
  * ## DISTRIBUTION PLOTS: -------------------------------------------
  * 
- * plt.figure(2, figsize=(12, 10))             # <<<<<<<<<<<<<<
+ * plt.figure(2,figsize=(12, 10))             # <<<<<<<<<<<<<<
  * 
  * ax1 = sns.distplot(test_target, hist=False, color="k", label='True Values')
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_figure); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_figure); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_figsize, __pyx_tuple__14) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__22, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_figsize, __pyx_tuple__14) < 0) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__22, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "compare.pyx":168
- * plt.figure(2, figsize=(12, 10))
+  /* "compare.pyx":178
+ * plt.figure(2,figsize=(12, 10))
  * 
  * ax1 = sns.distplot(test_target, hist=False, color="k", label='True Values')             # <<<<<<<<<<<<<<
  * 
  * ax2 = sns.distplot(lm.predict(normed_test_data),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sns); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sns); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_distplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_distplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_test_target); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_test_target); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_hist, Py_False) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_color, __pyx_n_u_k) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_label, __pyx_kp_u_True_Values) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_hist, Py_False) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_color, __pyx_n_u_k) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_label, __pyx_kp_u_True_Values) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ax1, __pyx_t_4) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ax1, __pyx_t_4) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "compare.pyx":170
+  /* "compare.pyx":180
  * ax1 = sns.distplot(test_target, hist=False, color="k", label='True Values')
  * 
  * ax2 = sns.distplot(lm.predict(normed_test_data),             # <<<<<<<<<<<<<<
  *                    hist=False,
  *                    color="c",
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sns); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sns); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_distplot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_distplot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_lm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_lm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_predict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_predict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "compare.pyx":171
+  /* "compare.pyx":181
  * 
  * ax2 = sns.distplot(lm.predict(normed_test_data),
  *                    hist=False,             # <<<<<<<<<<<<<<
  *                    color="c",
  *                    label='Linear Model Prediction',
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_hist, Py_False) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_color, __pyx_n_u_c) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_label, __pyx_kp_u_Linear_Model_Prediction) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_hist, Py_False) < 0) __PYX_ERR(0, 181, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_color, __pyx_n_u_c) < 0) __PYX_ERR(0, 181, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_label, __pyx_kp_u_Linear_Model_Prediction) < 0) __PYX_ERR(0, 181, __pyx_L1_error)
 
-  /* "compare.pyx":174
+  /* "compare.pyx":184
  *                    color="c",
  *                    label='Linear Model Prediction',
  *                    ax=ax1)             # <<<<<<<<<<<<<<
  * 
  * ax3 = sns.distplot(nn.predict(normed_test_data).flatten(),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ax1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ax1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_ax, __pyx_t_5) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_ax, __pyx_t_5) < 0) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "compare.pyx":170
+  /* "compare.pyx":180
  * ax1 = sns.distplot(test_target, hist=False, color="k", label='True Values')
  * 
  * ax2 = sns.distplot(lm.predict(normed_test_data),             # <<<<<<<<<<<<<<
  *                    hist=False,
  *                    color="c",
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ax2, __pyx_t_5) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ax2, __pyx_t_5) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "compare.pyx":176
+  /* "compare.pyx":186
  *                    ax=ax1)
  * 
  * ax3 = sns.distplot(nn.predict(normed_test_data).flatten(),             # <<<<<<<<<<<<<<
  *                    hist=False,
  *                    color="y",
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_sns); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_sns); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_distplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_distplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_nn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_nn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_predict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_predict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_normed_test_data); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_flatten); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_flatten); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "compare.pyx":177
+  /* "compare.pyx":187
  * 
  * ax3 = sns.distplot(nn.predict(normed_test_data).flatten(),
  *                    hist=False,             # <<<<<<<<<<<<<<
  *                    color="y",
  *                    label='Neural Net Prediction',
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_hist, Py_False) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_color, __pyx_n_u_y) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_label, __pyx_kp_u_Neural_Net_Prediction) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_hist, Py_False) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_color, __pyx_n_u_y) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_label, __pyx_kp_u_Neural_Net_Prediction) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
 
-  /* "compare.pyx":180
+  /* "compare.pyx":190
  *                    color="y",
  *                    label='Neural Net Prediction',
  *                    ax=ax1)             # <<<<<<<<<<<<<<
  * 
  * plt.title(
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ax1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_ax1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ax, __pyx_t_4) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ax, __pyx_t_4) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "compare.pyx":176
+  /* "compare.pyx":186
  *                    ax=ax1)
  * 
  * ax3 = sns.distplot(nn.predict(normed_test_data).flatten(),             # <<<<<<<<<<<<<<
  *                    hist=False,
  *                    color="y",
  */
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ax3, __pyx_t_4) < 0) __PYX_ERR(0, 176, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ax3, __pyx_t_4) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "compare.pyx":182
+  /* "compare.pyx":192
  *                    ax=ax1)
  * 
  * plt.title(             # <<<<<<<<<<<<<<
- *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price"
- * )
+ *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price",
+ *     weight='bold'
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_title); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_title); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
+
+  /* "compare.pyx":194
+ * plt.title(
+ *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price",
+ *     weight='bold'             # <<<<<<<<<<<<<<
+ * )
+ * plt.xlabel('Price (in dollars)')
+ */
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_weight, __pyx_n_u_bold) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
+
+  /* "compare.pyx":192
+ *                    ax=ax1)
+ * 
+ * plt.title(             # <<<<<<<<<<<<<<
+ *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price",
+ *     weight='bold'
+ */
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__23, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "compare.pyx":185
- *     "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price"
+  /* "compare.pyx":196
+ *     weight='bold'
  * )
  * plt.xlabel('Price (in dollars)')             # <<<<<<<<<<<<<<
  * plt.ylabel('Proportion of Cars')
- * plt.savefig('plots/b-dist-lin-nn-compare.png')
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 196, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 196, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 185, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "compare.pyx":186
+  /* "compare.pyx":197
  * )
  * plt.xlabel('Price (in dollars)')
  * plt.ylabel('Proportion of Cars')             # <<<<<<<<<<<<<<
- * plt.savefig('plots/b-dist-lin-nn-compare.png')
+ * 
+ * plt.rcParams["font.weight"] = "bold"
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "compare.pyx":199
+ * plt.ylabel('Proportion of Cars')
+ * 
+ * plt.rcParams["font.weight"] = "bold"             # <<<<<<<<<<<<<<
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_rcParams); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(PyObject_SetItem(__pyx_t_4, __pyx_kp_u_font_weight, __pyx_n_u_bold) < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "compare.pyx":187
- * plt.xlabel('Price (in dollars)')
- * plt.ylabel('Proportion of Cars')
- * plt.savefig('plots/b-dist-lin-nn-compare.png')             # <<<<<<<<<<<<<<
+  /* "compare.pyx":200
+ * 
+ * plt.rcParams["font.weight"] = "bold"
+ * plt.rcParams["axes.labelweight"] = "bold"             # <<<<<<<<<<<<<<
+ * 
+ * plt.savefig('plots/b-dist-lin-nn-compare.png')
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_savefig); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_rcParams); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_5, __pyx_kp_u_axes_labelweight, __pyx_n_u_bold) < 0)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "compare.pyx":202
+ * plt.rcParams["axes.labelweight"] = "bold"
+ * 
+ * plt.savefig('plots/b-dist-lin-nn-compare.png')             # <<<<<<<<<<<<<<
+ * plt.close()
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_savefig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "compare.pyx":203
+ * 
+ * plt.savefig('plots/b-dist-lin-nn-compare.png')
+ * plt.close()             # <<<<<<<<<<<<<<
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "compare.pyx":2
  * 
@@ -4327,10 +4454,10 @@ if (!__Pyx_RefNanny) {
  * 
  * ### IMPORT ML LIBRARIES: ======================================================
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_4) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_5) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /*--- Wrapped vars code ---*/
 

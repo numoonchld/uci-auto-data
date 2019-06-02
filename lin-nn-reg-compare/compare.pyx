@@ -128,12 +128,22 @@ nn.fit(normed_train_data,
 ## MULTI-LINEAR REGRESSION: --------------------------------------
 plt.figure(0, figsize=(12, 10))
 sns.residplot(lm.predict(normed_train_data), train_target)
+
+plt.rcParams["font.weight"] = "bold"
+plt.rcParams["axes.labelweight"] = "bold"
+
 plt.savefig('plots/a-resid-plot-multi-lin.png')
+plt.close()
 
 ## NEURAL NET REGRESSION: ----------------------------------------
 plt.figure(1, figsize=(12, 10))
 sns.residplot(nn.predict(normed_train_data).flatten(), train_target)
+
+plt.rcParams["font.weight"] = "bold"
+plt.rcParams["axes.labelweight"] = "bold"
+
 plt.savefig('plots/a-resid-plot-nn.png')
+plt.close()
 
 ### ACCURACY (out-of-sample test): ============================================
 
@@ -163,7 +173,7 @@ print(mean_squared_error(test_target, nn.predict(normed_test_data).flatten()))
 
 ## DISTRIBUTION PLOTS: -------------------------------------------
 
-plt.figure(2, figsize=(12, 10))
+plt.figure(2,figsize=(12, 10))
 
 ax1 = sns.distplot(test_target, hist=False, color="k", label='True Values')
 
@@ -180,8 +190,14 @@ ax3 = sns.distplot(nn.predict(normed_test_data).flatten(),
                    ax=ax1)
 
 plt.title(
-    "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price"
+    "['engine-size', 'horsepower', 'city-mpg', 'highway-mpg', 'body-style']:Price", 
+    weight='bold'
 )
 plt.xlabel('Price (in dollars)')
 plt.ylabel('Proportion of Cars')
+
+plt.rcParams["font.weight"] = "bold"
+plt.rcParams["axes.labelweight"] = "bold"
+
 plt.savefig('plots/b-dist-lin-nn-compare.png')
+plt.close()
