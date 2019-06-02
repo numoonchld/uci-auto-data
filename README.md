@@ -1,7 +1,7 @@
 # uci-auto-data
-data exploration and linear regression model training in python
+data exploration and regression models to predict used car price
 
-here are blog posts about exploring different regression algorithms to predict used car price based on other features:
+here are blog posts about exploring different regression algorithms to predict price based on other features:
 
 - [linear regression](https://numoonchld.github.io/2019/05/21/ml-case-study-1-uci-auto-data.html)
 - [neural net regression](https://numoonchld.github.io/2019/05/29/ml-case-study-2-uci-auto-data.html)
