@@ -126,6 +126,17 @@ nn.fit(normed_train_data,
 ### RESIDUALS (in-sample accuracy): ===========================================
 
 ## MULTI-LINEAR REGRESSION: --------------------------------------
+
+print('\nMulti-variate Linear Regression Accuracy Metrics')
+
+# R^2 score:
+print('in-sample R^2')
+print(r2_score(train_target, lm.predict(normed_train_data)))
+
+# MSE score:
+print('in-sample MSE')
+print(mean_squared_error(train_target, lm.predict(normed_train_data)))
+
 plt.figure(0, figsize=(12, 10))
 sns.residplot(lm.predict(normed_train_data), train_target)
 
@@ -136,6 +147,7 @@ plt.savefig('plots/a-resid-plot-multi-lin.png')
 plt.close()
 
 ## NEURAL NET REGRESSION: ----------------------------------------
+
 plt.figure(1, figsize=(12, 10))
 sns.residplot(nn.predict(normed_train_data).flatten(), train_target)
 
@@ -144,6 +156,32 @@ plt.rcParams["axes.labelweight"] = "bold"
 
 plt.savefig('plots/a-resid-plot-nn.png')
 plt.close()
+
+### ACCURACY (in-sample test): ============================================
+
+## MULTI-LINEAR REGRESSION: --------------------------------------
+
+print('\nMulti-variate Linear Regression Accuracy Metrics')
+
+# R^2 score:
+print('in-sample R^2')
+print(r2_score(train_target, lm.predict(normed_train_data)))
+
+# MSE score:
+print('in-sample MSE')
+print(mean_squared_error(train_target, lm.predict(normed_train_data)))
+
+## NEURAL NET REGRESSION: ----------------------------------------
+
+print('\nNeural Net Regression Accuracy Metrics')
+
+# R^2 score:
+print('in-sample R^2')
+print(r2_score(train_target, nn.predict(normed_train_data).flatten()))
+
+# MSE score:
+print('in-sample MSE')
+print(mean_squared_error(train_target, nn.predict(normed_train_data).flatten()))
 
 ### ACCURACY (out-of-sample test): ============================================
 
